@@ -38,7 +38,7 @@ var ScumbagBot = new Class({
 		var tmpquestion = this.AccentToNoAccent(this.trim((this.question + '').toLowerCase()));
 		
 		// Bonjour
-		if(this.questionStart(tmpquestion,['bjr','slt','salut','hello','coucou','bonjour'])){
+		if(this.questionStart(tmpquestion,['yo','bjr','slt','salut','hello','coucou','bonjour'])){
 			if(this.conversationPoints.sayHello != true){
 				this.conversationPoints.sayHello = true;
 				this.tmpanswer = this.arrand(['Hello','Bonjour']);
@@ -95,6 +95,13 @@ var ScumbagBot = new Class({
 			return 0;
 		}
 		
+		// Si quelqu'un ne demande pas des nouvelles
+		if(convlngth > 1 && this.conversationPoints.askForNews != true && this.conversationPoints.sayHello == true){
+			this.answer = 'Tu demandes pas de mes nouvelles ?';
+			this.arrand(['Tu demandes pas de mes nouvelles ?','Et moi, on s\'en fout ?','...']);
+			return 0;
+		}
+		
 		if(convlngth < 2) {
 			this.answer = '';
 			return 0;
@@ -118,10 +125,17 @@ var ScumbagBot = new Class({
 		}
 	},
 	setLog : function(who,what){
+		
+		var clength = this.logconversation.length;
+		
+		// Envoi de la conversation
 		this.logconversation.push([who,what]);
 		$('log').set('html',
-			$('log').get('html') + '<li><strong>' + who + '</strong> : <span class="question">' + what + '</span></li>'
+			$('log').get('html') + '<li id="conv-' + clength + '"><strong>' + who + '</strong> : <span class="question">' + what + '</span></li>'
 		);
+		
+		// Scroll
+		window.location.href = '#conv-' + clength;
 	},
 	
 	
