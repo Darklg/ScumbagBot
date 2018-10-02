@@ -12,3 +12,5 @@
   * Vanilla JavaScript
   * Bootstrap
       http://getbootstrap.com/
+ ## View 
+ ![alt text](https://raw.githubusercontent.com/svngoku/ScumbagBot/master/schuma.png)
