@@ -7,5 +7,8 @@
 ## Test
   Pour avoir un rendu de SchumbaBot , vous pouvez le tester sur ce lien http://lab.darklg.me/ScumbagBot/
 ## Technologie
+  * MooTools 
+      https://mootools.net
   * Vanilla JavaScript
   * Bootstrap
+      http://getbootstrap.com/
