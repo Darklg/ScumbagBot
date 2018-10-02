@@ -1,0 +1,32 @@
+body div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom {
+      	box-shadow: none !important;
+        border-top: none !important;
+      }
+      body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+				font-family: AvertaStd,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+        font-size: 13px !important;
+			}
+      body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+      	margin-top: 20px !important;
+      }
+      body div#hs-eu-cookie-confirmation div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button {
+        font-family: AvertaStd !important;
+        font-weight: 800 !important;
+        font-size: 14px !important;
+      	background-color: #00d664 !important;
+        color: #fff !important;
+        border-radius: 50px !important;
+        text-shadow: none !important;
+        border: none !important;
+        padding: 12px 45px !important;
+      }
+      body div#hs-eu-cookie-confirmation div#hs-en-cookie-confirmation-buttons-area a#hs-eu-decline-button {
+        font-family: AvertaStd !important;
+        font-weight: 800 !important;
+        font-size: 14px !important;
+        color: #00d664 !important;
+        text-shadow: none !important;
+        border: solid 1px #00d664 !important;
+        border-radius: 50px !important;
+        padding: 12px 45px !important;
+      }
